@@ -1,1 +1,1 @@
-<img width="320px" style="margin: 0px auto;" src="http://mechanair.com/images/mark.svg">
+<img width="320px" style="margin: 10vh auto;" src="http://mechanair.com/images/mark.svg">
