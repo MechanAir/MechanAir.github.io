@@ -1,1 +1,1 @@
-<img width="320px" style="padding: 60vh 0; margin: 0 auto;" src="../images/mark.svg">
+<img width="320px" style="padding: 40vh 0; margin: 0 auto; display: block;" src="../images/mark.svg">
