@@ -1,10 +1,15 @@
 # Site wide configuration
 
 title: "MechanAir"
+description: "HVAC, Mechanical, and Plumbing"
+logo: # 120x120 px default image used for Twitter summary card
+teaser: # 400x250 px default teaser image used in image archive grid
 locale: en
-url: http://mechanair.com
+url: https://mechanair.com
 feed:
   path: atom.xml
+
+# Jekyll configuration
 
 sass:
   sass_dir: _sass
@@ -18,6 +23,22 @@ gems:
   - jekyll-gist
   - jekyll-feed
 
+
+# Site owner
+owner:
+  name:
+  email:
+  twitter:
+  google:
+    ad-client:
+    ad-slot:
+  bio:
+  avatar: bio-photo.jpg # 160x160 px image for author byline
+  disqus-shortname:
+
+
+include:
+  - .htaccess
 exclude:
   - "*.less"
   - "*.sublime-project"
