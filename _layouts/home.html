@@ -24,10 +24,15 @@ layout: default
 		<div class="wrap">
 			<h3>{{ site.data.home.section-two.title }}</h3>
 			<p class="sub">{{ site.data.home.section-two.paragraph }}</p>
+			<ul class="features">
 			{% for item in site.data.industries %}
-				{{ item.industry.icon }}
+			<li>
+				<span class="icon" style="background-image: url(../images/{{ item.icon }})">
+				</span>
 				{{ item.industry }}
+			</li>
 			{% endfor %}
+			</ul>
 		</div>
 	</div>
 	<div class="slide" id="slide-thre">
