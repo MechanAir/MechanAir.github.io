@@ -13,13 +13,13 @@ section-three:
   title: We would love to work with you
   block-one:
     title: Interested in joining the MechanAir family?
-    ic: ic-join.svg
+    icon: ic-join.svg
     paragraph: If you run an MEP subcontracting business or provide HVAC maintenance services and are located in the mid-west or east-coast, we would love to chat.
     cta: Learn about the acquisition process
     cta-link: /companies
   block-two:
     title: Have a project for you need a partner on?
-    ic: ic-job.svg
+    icon: ic-job.svg
     paragraph: If you think might be a good fit for your project, please reach to one of our sales executives to get the process started.
     cta: See how we do projects
     cta-link: /contact
