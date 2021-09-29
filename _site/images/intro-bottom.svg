@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1440px" height="40px" viewBox="0 0 1440 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>intro-bottom</title>
-    <defs>
-        <polygon id="path-1" points="1440 86 868.736842 126 0 86"></polygon>
-    </defs>
+<svg width="1440px" height="72px" viewBox="0 0 1440 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>path-1</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-HD" transform="translate(0.000000, -884.000000)">
-            <g id="Bitmap" transform="translate(0.000000, 798.000000)">
-                <mask id="mask-2" fill="white">
-                    <use xlink:href="#path-1"></use>
-                </mask>
-                <use id="intro-bottom" fill="#08273F" xlink:href="#path-1"></use>
-            </g>
+        <g id="intro-bottom" fill="#08273F" fill-rule="nonzero">
+            <polygon id="path-1" points="1440 0 1019 72 0 0"></polygon>
         </g>
     </g>
 </svg>
