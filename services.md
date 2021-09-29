@@ -1,5 +1,6 @@
 ---
-title: "Consulting Solutions from SLKone"
+layout: services
+title: "Services"
 subtitle: "Capabilities"
 permalink: "/services/"
 ---

@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div id="main" class="companies" role="main">	
+	{% include title-image.html %}	
+	<div class="slide" id="companies">
+		<div class="wrap">
+			<h3>{{ site.data.acquisitions.slide-one.title }}</h4>
+			<div class="slide-blocks-featured">
+				{% for company in site.companies %}
+				<div class="inner-slide-block">
+					<div class="image" style="background-image: url(../images/{{ company.heroimage }});"></div>
+					<div class="text">
+						<h4>{{ company.title }}</h4>
+						<p>{{ company.location }} <br/><a href="{{company.website}}">{{ company.website }}</a></p>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>			
+	<div class="wrap content">
+		{{ content }}
+	</div><!-- /.wrap -->
+<div>

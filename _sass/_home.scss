@@ -49,150 +49,95 @@
 		background-repeat: no-repeat;
 	}
 }
-
-#slide-one {
-	background-color: $comp-color;	
-	&:before {
-		content: " ";
-		background-image: url(../images/intro-bottom.svg);
-		min-width: 100%;
-		height: 56px;
-		background-position: center;
-		background-repeat: no-repeat;
-		display: block;
-		margin: 0px auto;
-		margin-top: -$gutter;
-		@include media($medium) {
-			margin-top: -$gutter*3;
-		}		
-	}
-	.slide-blocks {
-		margin-top: $gutter*2;
-		@include media($medium) {
-			@include display(flex);
-			@include flex-wrap(wrap);
-		}
-	}
-	.inner-slide-block {
-		background-color: $base-color;
-		margin-bottom: $gutter;
-		padding: $gutter;
-		@include media($medium) {
-			padding: 0;
-			border-top-left-radius: 999px;
-			border-bottom-left-radius: 999px;
-			@include span-columns(6);
-			@include display(flex);
-			&:nth-child(even) {
-				margin-right: 0;
-			}
-		}
-		.icon {
-			display: block;
-			height: 48px;
+.home {
+	#slide-one {
+		background-color: $comp-color;	
+		&:before {
+			content: " ";
+			background-image: url(../images/intro-bottom.svg);
+			min-width: 100%;
+			height: 56px;
+			background-position: center;
 			background-repeat: no-repeat;
-			background-position: left center;
-			background-size: 48px;
+			display: block;
+			margin: 0px auto;
+			margin-top: -$gutter;
 			@include media($medium) {
-				background-color: $white;
-				margin: 0;
-				padding: 0;
-				height: 100%;
-				padding-left: $gutter*4;
-				padding-right: $gutter*4;
-				border-top-left-radius: 999px;
-				border-bottom-left-radius: 999px;
-				background-position: center;
-				background-size: 96px auto;
+				margin-top: -$gutter*3;
+			}		
+		}
+		
+	}
+
+	#slide-two {
+		&:before {
+			content: " ";
+			background-image: url(../images/slide-one-bottom.svg);
+			min-width: 100%;
+			height: 56px;
+			background-position: center;
+			background-repeat: no-repeat;
+			display: block;
+			margin: 0px auto;
+			margin-top: -$gutter;
+			@include media($medium) {
+				margin-top: -$gutter*3;
 			}
 		}
-		.text {
-			padding: $gutter 0;
+	}
+
+	#slide-three {
+		background-color: $comp-color-dark;
+		color: $text-color-light;
+		&:before {
+			content: " ";
+			background-image: url(../images/slide-two-bottom.svg);
+			min-width: 100%;
+			height: 56px;
+			background-position: center;
+			background-repeat: no-repeat;
+			display: block;
+			margin: 0px auto;
+			margin-top: -$gutter;
 			@include media($medium) {
-				padding: $gutter*2 $gutter;
+				margin-top: -$gutter*3;
 			}
-			@include display(flex);
-			@include flex-wrap(wrap);
-			@include align-content(center);
 		}
-		h4 {
-			@extend .h5;
-		}
-		p {
-			margin: 0;
-		}
-	}
-}
-
-#slide-two {
-	&:before {
-		content: " ";
-		background-image: url(../images/slide-one-bottom.svg);
-		min-width: 100%;
-		height: 56px;
-		background-position: center;
-		background-repeat: no-repeat;
-		display: block;
-		margin: 0px auto;
-		margin-top: -$gutter;
-		@include media($medium) {
-			margin-top: -$gutter*3;
-		}
-	}
-}
-
-#slide-three {
-	background-color: $comp-color-dark;
-	color: $text-color-light;
-	&:before {
-		content: " ";
-		background-image: url(../images/slide-two-bottom.svg);
-		min-width: 100%;
-		height: 56px;
-		background-position: center;
-		background-repeat: no-repeat;
-		display: block;
-		margin: 0px auto;
-		margin-top: -$gutter;
-		@include media($medium) {
-			margin-top: -$gutter*3;
-		}
-	}
-	h3 {
-		color: $white;
-	}
-	.slide-blocks {
-		margin-top: $gutter*2;
-		@include media($medium) {
-			@include display(flex);
-		}
-	}
-	.inner-slide-block {
-		padding: $gutter;
-		padding-top: 96px;
-		margin-bottom: $gutter;
-		background-repeat: no-repeat;
-		background-position: $gutter $gutter;
-		background-size: auto 48px;
-		background-color: $base-color-dark;
-		h4 {
-			@extend .h5;
+		h3 {
 			color: $white;
 		}
-		@include media($medium) {
-			max-width: 50%;
-			background-size: 96px auto;
-			padding-top: 200px;
-			background-position: center $gutter*2;
-			text-align: center;
-			padding-bottom: $gutter*2;
-			&:first-child {
-				margin-right: $gutter;
+		.slide-blocks {
+			margin-top: $gutter*2;
+			@include media($medium) {
+				@include display(flex);
+			}
+		}
+		.inner-slide-block {
+			padding: $gutter;
+			padding-top: 96px;
+			margin-bottom: $gutter;
+			background-repeat: no-repeat;
+			background-position: $gutter $gutter;
+			background-size: auto 48px;
+			background-color: $base-color-dark;
+			h4 {
+				@extend .h5;
+				color: $white;
+			}
+			@include media($medium) {
+				max-width: 50%;
+				background-size: 96px auto;
+				padding-top: 200px;
+				background-position: center $gutter*2;
+				text-align: center;
+				padding-bottom: $gutter*2;
+				&:first-child {
+					margin-right: $gutter;
+				}
 			}
 		}
 	}
 }
-
 .features {
 	padding: 0;
 	margin: 0;

@@ -97,6 +97,9 @@ h1#logo {
 				padding-bottom: 0;
 			}
 		}
+		@include media($medium) {
+			text-align: center;
+		}
 		.background-overlay {
 			background: linear-gradient(to bottom, rgba($base-color-dark,1) 0%, rgba($base-color-dark,.75) 100%);
 			padding-top: 10vh;
@@ -652,254 +655,77 @@ body .b24-form {
 }
 
 /* Post Block */
-.post-block {
-	a {
-		margin: 0 !important;
-		text-decoration: none;
-	}
-	
-}
-
-
-.post-block {
-	background-color: $white;
-	a {
-		margin: 0 !important;
-		text-decoration: none;
-		&:hover {
-		.block-image {
-			transform: scale(1.1);
-			transition: all .2s ease-in-out; 
-		}
-		}
-	}
-	.block-image-wrapper {
-		width: 100%;
-		overflow: hidden;
-	}	
-	.block-image {
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		height: 10em;
-		transition: all .2s ease-in-out; 
-	}
-	.block-content {
-		color: $body-color;
-		padding: $gutter;
-		text-align: left;
-	}
-	@include media($medium) {
-		a {
-			align-items: center;
-		}
-		.block-image {
-			height: 16em;
-		}
-     	.block-content {
-     	padding: $gutter;
-     	}
-	}
-	@include media ($large) {
-		.block-image {
-			height: 20em;
-		}
-	}
-	.block-meta {
-		@extend .btn;
-		padding: 0px;
-	}
-}
-
-
-.post-block-wide {
-	width: 100%;
-	max-width: 100%;
-	a {
-	width: 100%;
-		&:hover {
-		.block-image {
-			transform: scale(1.1);
-			transition: all .2s ease-in-out; 
-		}
-		}
-	}
-	.block-image-wrapper {
-		width: 100%;
-		overflow: hidden;
-	}
-	.block-image {
-	height: 16em;
-	transition: all .2s ease-in-out; 
-	}
-	.block-content {
-	padding: $gutter;
-	text-align: left;
-	}
-	.block-description {
-		font-size: 1.2em;
-	}
-	@include media($medium) {
-		a {
+.slide-blocks-featured {
+		margin-top: $gutter*2;
+		@include media($medium) {
 			@include display(flex);
-			align-items: center;
-		}
-		.block-image {
-			height: 36em;
-		}
-		.block-image-wrapper, .block-content {
-        	width: 50%;
-     	}
-     	.block-content {
-     	max-width: 53.5em;
-     	padding: $gutter*2;
-     	}
-	}
-	@include media ($large) {
-		.block-image {
-			height: 50em;
+			@include flex-wrap(wrap);
 		}
 	}
-	&:nth-child(even) {
-		.block-image-wrapper {
-			order: 2;
-		}
-		a {
-			justify-content: flex-end;
-		}
-	}
-	.btn {
-	display: block;
-	margin: $gutter 0;
-	}
-}
-.post-blocks-wrap {
-	background-color: $caption-color;
-	padding: $gutter;
-	text-align: center;
-}
-
-.post-blocks-medium {
-	max-width: 71.875em;
-	margin: $gutter auto;
-	@include display(flex);
-	@include flex-wrap(wrap);
-	justify-content: flex-start;
-    .post-block-masonry {
-	    .post-block {
-		    	margin-bottom: $gutter;
-	    }
-	     @include media ($medium) {
-	    	width: 50%;
-	    	
-	    	&:nth-child(odd) .post-block {
-	    		margin-right: $gutter/2;
-	    	}
-	    	&:nth-child(even) .post-block {
-	    		margin-left: $gutter/2;
-	    	}
-    	}
-	}
-}
-.post-blocks {
-	max-width: 71.875em;
-	margin: $gutter auto;
-	@include display(flex);
-	@include flex-wrap(wrap);
-	justify-content: flex-start;
-    .post-block-masonry {
-	    .post-block {
-		    	margin-bottom: $gutter;
-	    }
-	     @include media ($medium) {
-	    	width: 50%;
-	    	
-	    	&:nth-child(odd) .post-block {
-	    		margin-right: $gutter/2;
-	    	}
-	    	&:nth-child(even) .post-block {
-	    		margin-left: $gutter/2;
-	    	}
-    	}
-	    @include media ($large) {
-			width: 33.333%;
-			&:nth-child(3n-2) .post-block {
-				margin-right: $gutter*.666;
-				margin-left: 0;
-			}
-			&:nth-child(3n-1) .post-block {
-				margin-left: $gutter*.3333;
-				margin-right: $gutter*.3333;
-			}
-			&:nth-child(3n) .post-block {
+	.inner-slide-block {
+		background-color: $base-color;
+		margin-bottom: $gutter;
+		padding: $gutter;
+		@include media($medium) {
+			padding: 0;
+			border-top-left-radius: 999px;
+			border-bottom-left-radius: 999px;
+			@include span-columns(6);
+			@include display(flex);
+			&:nth-child(even) {
 				margin-right: 0;
-				margin-left: $gutter*.666;
 			}
 		}
-	}
-}
-
-.post-blocks-small {
-	max-width: 71.875em;
-	margin: $gutter auto;
-	@include display(flex);
-	@include flex-wrap(wrap);
-	justify-content: flex-start;
-	text-align: left;
-    .post-block-masonry {
-	    .post-block {
-		    	margin-bottom: $gutter;
-	    }
-	     @include media ($medium) {
-	    	width: 50%;
-	    	
-	    	&:nth-child(odd) .post-block {
-	    		margin-right: $gutter/2;
-	    	}
-	    	&:nth-child(even) .post-block {
-	    		margin-left: $gutter/2;
-	    	}
-    	}
-	    @include media ($large) {
-			width: 25%;
-			&:nth-child(4n-3) .post-block {
-				margin-right: $gutter*.75;
-				margin-left: 0;
+		.icon {
+			display: block;
+			height: 48px;
+			background-repeat: no-repeat;
+			background-position: left center;
+			background-size: 48px;
+			@include media($medium) {
+				background-color: $white;
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				padding-left: $gutter*4;
+				padding-right: $gutter*4;
+				border-top-left-radius: 999px;
+				border-bottom-left-radius: 999px;
+				background-position: center;
+				background-size: 96px auto;
 			}
-			&:nth-child(4n-2) .post-block {
-				margin-left: $gutter*.25;
-				margin-right: $gutter*.5;
+		}
+		.image {
+			display: block;
+			height: 48px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: left center;
+			@include media($medium) {
+				background-color: $white;
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				padding-left: $gutter*4;
+				padding-right: $gutter*4;
+				border-top-left-radius: 999px;
+				border-bottom-left-radius: 999px;
+				background-position: center;
 			}
-			&:nth-child(4n-1) .post-block {
-				margin-left: $gutter*.5;
-				margin-right: $gutter*.25;
+		}		
+		.text {
+			padding: $gutter 0;
+			@include media($medium) {
+				padding: $gutter*2 $gutter;
 			}
-			&:nth-child(4n) .post-block {
-				margin-left: $gutter*.75;
-				margin-right: 0;
-			}			
+			@include display(flex);
+			@include flex-wrap(wrap);
+			@include align-content(center);
+		}
+		h4 {
+			@extend .h5;
+		}
+		p {
+			margin: 0;
 		}
 	}
-}
-
-.post-block-small {
-	.block-meta {
-		padding-top: $gutter/2;
-		margin: 0;
-	}
-	h4 {
-	margin-bottom: $gutter/2;
-	}
-	.block-content {
-		padding: 0;
-		color: $body-color;
-	}
-	.block-image {
-		height: 10em;
-	}
-	@include media ($large) {
-		.block-image {
-			height: 10em;
-		}
-	}
-}

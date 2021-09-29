@@ -1,0 +1,11 @@
+slide-one:
+  title: We're looking for
+    block-one:
+      title: MEP and Specialized Contractors
+      paragraph: Businesses performing construction services in HVAC, Plumbing, Process Piping, Refrigeration, Electrical, Automation System 
+    block-two:
+      title: Service
+      icon: ic-job.svg
+      paragraph: If you think might be a good fit for your project, please reach to one of our sales executives to get the process started.
+      cta: See how we do projects
+      cta-link: /services
