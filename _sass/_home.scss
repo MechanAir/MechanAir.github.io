@@ -48,6 +48,9 @@
 
 #slide-one {
 	background-color: $comp-color;	
+	h3 {
+		margin-top: $gutter/2;
+	}
 	&:before {
 		content: " ";
 		background-image: url(../images/intro-bottom.svg);
@@ -66,6 +69,9 @@
 }
 
 #slide-two {
+	h3 {
+		margin-top: $gutter;
+	}
 	&:before {
 		content: " ";
 		background-image: url(../images/slide-one-bottom.svg);
@@ -89,7 +95,7 @@
 	h3 {
 		color: $white;
 	}
-	#slide-blocks {
+	.slide-blocks {
 		margin-top: $gutter*2;
 		@include media($medium) {
 			@include display(flex);
