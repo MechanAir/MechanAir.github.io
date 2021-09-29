@@ -1,12 +1,4 @@
----
-layout: page
-permalink: /email
-title: Email Styling
-noindex: true
----
-   <h4>Copy the content in the section below to add an email signature. Remember to edit the email and telephone number</h4>
-
-
+I"^<h4>Copy the content in the section below to add an email signature. Remember to edit the email and telephone number</h4>
 
 <table id="email" width="340" cellspacing="0" cellpadding="0" border="0">
    <tr style="border:0;padding:0;">
@@ -14,7 +6,7 @@ noindex: true
          <table cellspacing="0" cellpadding="0" border="0">
             <tr style="border:0;padding:0;">
                <td valign="top" width="140" style="padding:0 24px 0 0; vertical-align: middle; border:0;">
-               	<a href="http://mechanair.com" target="_blank"><img alt="MechanAir" width="140" style="width:120px; vertical-align: middle;" src="https://mechanair.com/images/mechanair-email-logo.png" /></a>
+               	<a href="http://slk.one" target="_blank"><img alt="SLKone" width="140" style="width:140px; vertical-align: middle;" src="https://mechanair.com/images/mechanair-email-logo.png" /></a>
                </td>
                <td style="font-size:1em;padding:0 15px 0 24px;vertical-align: top; border:0; border-left: 1px solid #5DBC5B;" valign="top">
                   <table cellspacing="0" cellpadding="0" border="0" style="line-height: 1.1;">
@@ -42,3 +34,4 @@ noindex: true
       </td>
    </tr>
 </table>
+:ET
