@@ -1,8 +1,8 @@
 ---
 layout: contact
 permalink: /contact/
-title: "Contact SLKone"
+title: "Contact MechanAir"
 subtitle: "Get in Touch"
-tel: "+1.919.537.9189"
-email: "hello@slkone.com"
+tel: "+1.630.723.6000"
+email: "hello@mechanair.com"
 ---

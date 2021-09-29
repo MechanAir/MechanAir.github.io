@@ -328,11 +328,8 @@ select {
 
 label {
 	@extend .overline;
-	position: absolute;
-	background: $white;
 	display: block;
 	padding: 0 4px;
-	margin: -8px 0px 0px 8px;
 	width: auto;
 }
 
