@@ -39,9 +39,9 @@ p {
 
 /* Headings */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .h7 {
 	font-family: $heading-font;
-	font-weight: 100;
+	font-weight: 500;
 	text-rendering: optimizeLegibility; // Fix the character spacing for headings
 	margin: 0 0 8px 0;
 	padding: 0;
@@ -70,18 +70,13 @@ h4,.h4 {
 	}
 }
 h5,.h5 {
-	@include font-size(20,yes,24);
-	letter-spacing: 0.1em;
-	@include media($medium) {
-		@include font-size(24,yes,32);
-	}
+	@include font-size(18,yes,24);
 }
 h6,.h6 {
 	@include font-size(16,yes,20);
 }
 
 h7,.h7 {
-	font-weight: normal;
 	@include font-size(14,yes,18);
 }
 

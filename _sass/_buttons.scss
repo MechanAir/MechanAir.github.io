@@ -3,10 +3,9 @@
 	padding: 11px 16px;
 	border: 0px solid $link-color;
 	border-radius: $border-radius;
-	font-weight: 500;
 	font-family: $link-font;
 	letter-spacing: 1px;
-	@include font-size(14);
+	font-weight: 500;
 	text-decoration: none;
 }
 

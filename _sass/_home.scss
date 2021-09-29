@@ -1,5 +1,8 @@
 .slide {
 	padding: $gutter 0;
+	h3 {
+		margin-top: $gutter/2;
+	}
 	@include media($medium) {
 		padding: $gutter*3 0;
 		h3 {
@@ -84,12 +87,13 @@
 		}
 		.icon {
 			display: block;
-			background-color: $white;
-			background-size: 96px 96px;
-			height: 192px;
-			background-position: $gutter center;
+			padding-top: 64px;
 			background-repeat: no-repeat;
+			background-position: $gutter $gutter;
+			background-size: 48px;
 			@include media($medium) {
+				background-color: $white;
+				padding: 0;
 				height: 100%;
 				padding-left: $gutter*4;
 				padding-right: $gutter*4;
@@ -108,7 +112,7 @@
 			@include align-content(center);
 		}
 		h4 {
-			@extend .h6;
+			@extend .h5;
 		}
 		p {
 			margin: 0;
@@ -193,7 +197,7 @@
 		@include flex-wrap(wrap);
 	}
 	li {
-		@extend h6;
+		@extend .h5;
 		@include display(flex);
 		@include align-items(center);
 		@include media($medium) {
