@@ -1,20 +1,6 @@
-.slide {
-	padding: $gutter 0;
+.home {
 	h3 {
 		margin-top: $gutter/2;
-	}
-	@include media($medium) {
-		padding: $gutter*3 0;
-		h3 {
-			margin-top: $gutter;
-			text-align: center;
-		}
-		p.sub {
-			max-width: 50%;
-			text-align: center;
-			margin-left: auto;
-			margin-right: auto;
-		}
 	}
 }
 #intro {
@@ -106,34 +92,27 @@
 		h3 {
 			color: $white;
 		}
-		.slide-blocks {
+		.slide-blocks-square {
 			margin-top: $gutter*2;
 			@include media($medium) {
 				@include display(flex);
 			}
 		}
 		.inner-slide-block {
-			padding: $gutter;
 			padding-top: 96px;
-			margin-bottom: $gutter;
 			background-repeat: no-repeat;
 			background-position: $gutter $gutter;
 			background-size: auto 48px;
 			background-color: $base-color-dark;
 			h4 {
-				@extend .h5;
 				color: $white;
 			}
 			@include media($medium) {
-				max-width: 50%;
 				background-size: 96px auto;
 				padding-top: 200px;
 				background-position: center $gutter*2;
 				text-align: center;
 				padding-bottom: $gutter*2;
-				&:first-child {
-					margin-right: $gutter;
-				}
 			}
 		}
 	}

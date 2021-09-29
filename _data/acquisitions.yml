@@ -1,14 +1,18 @@
 slide-one: 
-    title: 
+    title: Our Companies
 slide-two:
-  title: We're looking for
+  title: Does your business fit these descriptions?
   block-one:
-    title: MEP and Specialized Contractors
-    finance: Revenue of $25M+ or Net Income of $3M+
-    paragraph: Businesses performing construction services in HVAC, Plumbing, Process Piping, Refrigeration, Electrical, and Automation Systems. Preferably serving customers in healthcare, industrial, biotech, and warehousing.
+    title: HVAC/MEP Contractor
+    finance: Revenues of $30M+ and/or Net Income of $3M+
+    location: Located in areas surrounding Philadelpha, Atlanta, Pittsburgh, Trenton, Cleveland, and Raleigh
+    paragraph: Businesses performing construction services such as HVAC installation, Plumbing, Process Piping, Refrigeration, Electrical, and Automation Systems. Preferably, you have provide value-added engineering and have a specialization in healthcare, industrial, biotech, or warehousing.
+    cta-link: /contact/
+    cta: Get in Touch With Us
   block-two:
-    title: HVAC/Plumbing Service Providers
-    finance: Revenue of $2M+
-    paragraph: If you think might be a good fit for your project, please reach to one of our sales executives to get the process started.
-    cta: See how we do projects
-    cta-link: /services
+    title: HVAC/MEP Maintenance Service Provider
+    finance: Revenues of $2M+
+    location: Located in areas surrounding Chicago, Washington DC, Richmond, and Chesapeake
+    paragraph: Businesses with recurring preventative HVAC, plumbing, and/or electrical maintenance contracts performing regularly scheduled maintenance and regular repair work for customers in retail, hospitality, healthcare, and commercial spaces.
+    cta-link: /contact/
+    cta: Reach out to Us

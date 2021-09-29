@@ -19,8 +19,26 @@ layout: default
 				{% endfor %}
 			</div>
 		</div>
-	</div>			
-	<div class="wrap content">
-		{{ content }}
-	</div><!-- /.wrap -->
+	</div>	
+	<div class="slide" id="slide-two">
+		<div class="wrap">
+			<h3>{{ site.data.acquisitions.slide-two.title }}</h3>
+			<div class="slide-blocks-square">
+				<div class="inner-slide-block">
+					<h4>{{ site.data.acquisitions.slide-two.block-one.title }}</h4>
+					<p><strong>{{ site.data.acquisitions.slide-two.block-one.finance }}</strong></p>
+					<p>{{ site.data.acquisitions.slide-two.block-one.paragraph }} <br/><br/>
+					{{ site.data.acquisitions.slide-two.block-one.location }}</p>
+					<a class="btn btn-nospace" href="{{site.url}}{{ site.data.acquisitions.slide-two.block-one.cta-link }}">{{ site.data.acquisitions.slide-two.block-one.cta }} &raquo;</a>
+				</div>
+				<div class="inner-slide-block">
+					<h4>{{ site.data.acquisitions.slide-two.block-two.title }}</h4>
+					<p><strong>{{ site.data.acquisitions.slide-two.block-two.finance }}</strong></p>
+					<p>{{ site.data.acquisitions.slide-two.block-two.paragraph }}<br/><br/>
+					{{ site.data.acquisitions.slide-two.block-two.location }}</p>
+					<a class="btn btn-nospace" href="{{site.url}}{{ site.data.acquisitions.slide-two.block-two.cta-link }}">{{ site.data.acquisitions.slide-two.block-two.cta }} &raquo;</a>
+				</div>
+			</div>
+		</div>
+	</div>	
 <div>

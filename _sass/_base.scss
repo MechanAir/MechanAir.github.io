@@ -29,10 +29,10 @@ p {
 		@include font-size(16,yes,20);
 	}
 	&.large {
-		@include font-size(20,yes,24);
+		@include font-size(16,yes,20);
 		font-style: normal;
 		@include media($medium) {
-			@include font-size(24,yes,32);
+			@include font-size(18,yes,24);
 		}
 	}
 }
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .h7 {
 	text-rendering: optimizeLegibility; // Fix the character spacing for headings
 	margin: 0 0 8px 0;
 	padding: 0;
-	color: $comp-color-dark;
+	color: $base-color-dark;
 }
 h1,.h1 {
 	@include font-size(96,108);

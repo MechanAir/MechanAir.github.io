@@ -1,6 +1,15 @@
 .companies {
 	#companies {
 		background-color: $comp-color;
-		padding-top: 0;
+	}
+	#slide-two {
+		.inner-slide-block {
+			border: 2px solid $comp-color;
+			padding: $gutter;
+			h4 {
+				border-bottom: 1px solid $comp-color;
+				padding-bottom: $gutter;
+			}
+		}
 	}
 }

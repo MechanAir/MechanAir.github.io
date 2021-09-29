@@ -619,53 +619,34 @@ h1#logo {
 	}
 }
 
-
-#announcement {
-  width: 100%;
-  background: $link-color;
-  position:absolute;
-  z-index: 999;
-  text-align: center;
-  padding: 2px 0;
-  a {
-    color: $white;
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-size: .875rem;
-    text-transform: uppercase;
-  }
+.slide {
+	padding: $gutter 0;
+	@include media($medium) {
+		padding: $gutter*3 0;
+		h3 {
+			text-align: center;
+		}
+		p.sub {
+			max-width: 50%;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
 }
 
-
-body .b24-form {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  .b24-form-header-title, .b24-form-header-description, input  {
-  font-family: "franklin-gothic-urw",sans-serif !important;
-  }
-  .b24-form-header-title {
-    font: 500 24px/33px "franklin-gothic-urw",sans-serif !important;
-  }
-  .b24-form-btn {
-    @extend .btn-filled;
-  }
-  .b24-form-sign {
-    display: none !important;
-  }
-}
-
-/* Post Block */
 .slide-blocks-featured {
 		margin-top: $gutter*2;
 		@include media($medium) {
 			@include display(flex);
 			@include flex-wrap(wrap);
 		}
-	}
 	.inner-slide-block {
 		background-color: $base-color;
 		margin-bottom: $gutter;
-		padding: $gutter;
+		p:last-child {
+			margin-bottom: 0;
+		}
 		@include media($medium) {
 			padding: 0;
 			border-top-left-radius: 999px;
@@ -682,11 +663,16 @@ body .b24-form {
 			background-repeat: no-repeat;
 			background-position: left center;
 			background-size: 48px;
+			position: relative;
+			top: $gutter;
+			margin-bottom: $gutter;
+			left: $gutter;
 			@include media($medium) {
 				background-color: $white;
 				margin: 0;
 				padding: 0;
 				height: 100%;
+				position: static;
 				padding-left: $gutter*4;
 				padding-right: $gutter*4;
 				border-top-left-radius: 999px;
@@ -697,7 +683,7 @@ body .b24-form {
 		}
 		.image {
 			display: block;
-			height: 48px;
+			height: 192px;
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: left center;
@@ -714,7 +700,7 @@ body .b24-form {
 			}
 		}		
 		.text {
-			padding: $gutter 0;
+			padding: $gutter;
 			@include media($medium) {
 				padding: $gutter*2 $gutter;
 			}
@@ -729,3 +715,30 @@ body .b24-form {
 			margin: 0;
 		}
 	}
+}
+.slide-blocks-square {
+		margin-top: $gutter*2;
+		@include media($medium) {
+			@include display(flex);
+		}
+	.inner-slide-block {
+		padding: $gutter;
+		margin-bottom: $gutter;
+		border-radius: $border-radius;
+		p:last-child {
+			margin-bottom: 0;
+		}
+		h4 {
+			@extend .h5;
+		}
+		@include media($medium) {
+			max-width: 50%;
+			background-size: 96px auto;
+			text-align: left;
+			padding-bottom: $gutter*2;
+			&:first-child {
+				margin-right: $gutter;
+			}
+		}
+	}
+}
