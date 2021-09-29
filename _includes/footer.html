@@ -6,7 +6,9 @@
 		</div>
 		<div class="footer-two">
 			<nav role="navigation" class="menu bottom-menu">
-				<a href="{{ site.url }}/contact">Get in Touch</a> <a href="{{ site.url }}/services">Services</a> <a href="{{ site.url }}/companies">Companies</a> <a href="{{ site.url }}/careers">Jobs</a>  <a href="{{ site.url }}/terms-and-conditions">Terms &amp; Conditions</a>
+				{% for nav in site.data.footer %}
+					<a href="{{ site.url }}/{{ nav.url }}">{{ nav.title }}</a> 
+				{% endfor %}
 			</nav>
 			
 		</div>
