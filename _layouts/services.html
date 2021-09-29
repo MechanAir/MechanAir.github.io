@@ -2,9 +2,38 @@
 layout: default
 ---
 
-<div id="main" class="case-study" role="main">	
-	{% include title-image.html %}			
-	<div class="wrap content">
-		{{ content }}
-	</div><!-- /.wrap -->
+<div id="main" class="services" role="main">	
+	{% include title-image.html %}	
+	<div class="slide" id="projects">
+		<div class="wrap">
+			{% assign featured_counter == 0 %}
+			{% assign featured_posts = '' | split: '' %}
+			{% for post in site.posts %}
+				{% if post.tags contains 'Featured-Project' %}
+				  {% include gallery-block.html %}
+				  {% assign featured_counter = featured_counter | plus: 1 %}
+					{% assign featured_posts = featured_posts | push: post.title %}
+				{% endif %}
+				{% if featured_counter == 4 %}
+				 {% break %}
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+	<div class="slide" id="solutions">
+		<div class="wrap">
+			<h3>{{ site.data.home.section-one.title }}</h3>
+			<div class="slide-blocks-featured">
+				{% for service in site.services %}
+				<div class="inner-slide-block">
+					<div class="icon" style="background-image: url(../images/{{ service.icon }});"></div>
+					<div class="text">
+						<h4>{{ service.title }}</h4>
+						<p>{{ service.intro }}</p>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>		
 <div>
