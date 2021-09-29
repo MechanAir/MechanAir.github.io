@@ -121,7 +121,7 @@ $link-color: $base-color-dark;
 		z-index: 0;
 		top: 0;
 		left: 0;
-		background: rgba(0,0,0,0);
+		background: rgba($comp-color-dark,0);
 		transition: 0.45s;
 		display: none;
 }
@@ -132,7 +132,7 @@ $link-color: $base-color-dark;
 		transition: 0.45s;
 	}
 	#main:after {
-		background: rgba(0,0,0,.5);
+		background: rgba($base-color-dark,1);
 		z-index: 9;
 		transition: 0.45s;
 		display: block;
@@ -155,7 +155,6 @@ $link-color: $base-color-dark;
 	}
 }
 .nav-drill {
-	margin-top: 66px;
 	@include media($medium) {
 		margin-top: 120px;
 	}
@@ -194,7 +193,7 @@ $nav-level5-background-color: $base-color-dark;
 		display: flex;
 		position: fixed;
 		z-index: 100;
-		top: 0;
+		top: 107px;
 		right: 0;
 		width: $nav-width;
 		height: 100vh;

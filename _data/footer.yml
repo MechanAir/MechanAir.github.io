@@ -1,4 +1,10 @@
 # Footer navigation links
 
-- title:
-  url:
+- title: Companies 
+  url: /companies
+- title: Services
+  url: /services
+- title: Contact
+  url: /contact
+- title: Terms & Conditions
+  url: /terms-and-conditions
