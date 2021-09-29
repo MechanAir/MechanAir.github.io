@@ -3,6 +3,7 @@
 	@include media($medium) {
 		padding: $gutter*3 0;
 		h3 {
+			margin-top: $gutter;
 			text-align: center;
 		}
 		p.sub {
@@ -48,18 +49,14 @@
 
 #slide-one {
 	background-color: $comp-color;	
-	h3 {
-		margin-top: $gutter/2;
-	}
 	&:before {
 		content: " ";
 		background-image: url(../images/intro-bottom.svg);
 		min-width: 100%;
-		height: 72px;
+		height: 56px;
 		background-position: center;
 		background-repeat: no-repeat;
 		display: block;
-		position: absolute;
 		margin: 0px auto;
 		margin-top: -$gutter;
 		@include media($medium) {
@@ -120,18 +117,14 @@
 }
 
 #slide-two {
-	h3 {
-		margin-top: $gutter;
-	}
 	&:before {
 		content: " ";
 		background-image: url(../images/slide-one-bottom.svg);
 		min-width: 100%;
-		height: 80px;
+		height: 56px;
 		background-position: center;
 		background-repeat: no-repeat;
 		display: block;
-		position: absolute;
 		margin: 0px auto;
 		margin-top: -$gutter;
 		@include media($medium) {
@@ -143,6 +136,20 @@
 #slide-three {
 	background-color: $comp-color-dark;
 	color: $text-color-light;
+	&:before {
+		content: " ";
+		background-image: url(../images/slide-two-bottom.svg);
+		min-width: 100%;
+		height: 56px;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: block;
+		margin: 0px auto;
+		margin-top: -$gutter;
+		@include media($medium) {
+			margin-top: -$gutter*3;
+		}
+	}
 	h3 {
 		color: $white;
 	}
