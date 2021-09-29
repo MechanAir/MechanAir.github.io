@@ -803,7 +803,6 @@ h1#logo {
 
 
 .post-block {
-	background-color: $white;
 	a {
 		margin: 0 !important;
 		text-decoration: none;
@@ -856,7 +855,7 @@ h1#logo {
 .post-block-wide {
 	width: 100%;
 	max-width: 100%;
-	a {
+	.block-inner-wrap {
 	width: 100%;
 		&:hover {
 		.block-image {
@@ -881,7 +880,7 @@ h1#logo {
 		font-size: 1.2em;
 	}
 	@include media($medium) {
-		a {
+		.block-inner-wrap {
 			@include display(flex);
 			align-items: center;
 		}
@@ -905,7 +904,7 @@ h1#logo {
 		.block-image-wrapper {
 			order: 2;
 		}
-		a {
+		.block-inner-wrap {
 			justify-content: flex-end;
 		}
 	}
