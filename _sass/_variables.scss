@@ -25,6 +25,7 @@ $border-radius               	: 4px;
 
 $white                        	: #fff;
 $black                        	: #000;
+$blue                         : #109FDA;
 
 $body-color                  	: #4579A1;
 
@@ -37,7 +38,7 @@ $base-color-dark		   		: #08273F;
 $comp-color                  	: #E8F2FC;
 $comp-color-dark              : #0B385B;
 $border-color                	: #E8F2FC;
-$link-color                  	: #109FDA;
+$link-color                  	: $blue;
 
 $primary-color               	: $black;
 $success-color               	: #2ecc71;

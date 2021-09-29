@@ -1,7 +1,7 @@
 slide-one: 
     title: Our Companies
 slide-two:
-  title: Does your business fit these descriptions?
+  title: Have a business that fits these descriptions?
   block-one:
     title: HVAC/MEP Contractor
     finance: Revenues of $30M+ and/or Net Income of $3M+
@@ -16,3 +16,47 @@ slide-two:
     paragraph: Businesses with recurring preventative HVAC, plumbing, and/or electrical maintenance contracts performing regularly scheduled maintenance and regular repair work for customers in retail, hospitality, healthcare, and commercial spaces.
     cta-link: /contact/
     cta: Reach out to Us
+slide-three:
+  title: Benefits of Joining MechanAir
+  paragraph: We were founded by entrepreneurs and operators. Unlike traditional Private Equity we understand and have experienced running a business and respect the challenges and decisions business owners face; we take a collaborative approach to business growth and improvement with our team members
+benefits:  
+  - benefit:
+    title: Autonomy
+    description: Allowing local teams to manage largely independently while sharing best practices across a family of regional pillars
+    icon: ic-autonomy.svg
+  - benefit:
+    title: Back Office Support
+    description: Providing high caliber support in engineering, accounting, marketing, and technology adoption
+    icon: ic-support.svg
+  - benefit:
+    title: Better Employee Benefits
+    description: Leveraging our scale to provide better healthcare benefits and training perks to team members
+    icon: ic-benefits.svg
+  - benefit:
+    title: Financial Upside
+    description: Rewarding you and your team for your hard work to date and participation in future upside
+    icon: ic-financial.svg
+slide-four:
+  title: What's acquisition the process?
+process:
+  - step:
+    title: Sign a Confidentiality Agreement
+    description: We can hop on a call or meet you in person to provide more details about our plans for MechanAir and any other questions you have
+  - step:
+    title: Perform Initial Business Assessment
+    description: We create a data request for some initial information that gives us an overall picture of your business
+  - step:
+    title: Agree on a Valuation
+    description: Based on the information provided, we provide you with a fair offer for the value of your business
+  - step:
+    title: Share a Letter of Intent
+    description: Our LOI lays out the terms of the transaction and our overall proposal
+  - step:
+    title: Perform Confirmatory Due Diligence
+    description: We dive deeper into your business to clearly understand your people, operations, and finances
+  - step:
+    title: Negotiate and Execute a Purchase Agreement
+    description: We work with you to professionally and expediently prepare a purchase agreement that reflects our negotiated deal
+  - step:
+    title: Close
+    description: Ahead of close, we begin creating a 30, 60, 180 day plan with you and your management team to make the transition post-close as smooth as possible

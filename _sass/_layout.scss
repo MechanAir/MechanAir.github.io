@@ -742,3 +742,49 @@ h1#logo {
 		}
 	}
 }
+
+.features {
+	padding: 0;
+	margin: 0;
+	@include media($medium) {
+		@include display(flex);
+		@include flex-wrap(wrap);
+	}
+	li {
+		margin-bottom: $gutter;
+		.heading {
+			@extend .h5;
+			display: block;
+			margin-bottom: $gutter/4;
+		}
+		.description {
+			display: block;
+		}
+		@include display(flex);
+		@include align-items(center);
+		@include media($medium) {
+			display: block;
+			text-align: center;
+			width: auto;
+		}
+	}
+	.icon {
+		margin-right: $gutter;
+		display: block;
+		background-color: $white;
+		background-size: auto 32px;
+		padding-top: 64px;
+		padding-left: 64px;
+		border-radius: 32px;
+		background-position: center;
+		background-repeat: no-repeat;
+		@include media($medium) {
+			margin: $gutter auto;
+			padding-top: 96px;
+			padding-left: 96px;
+			background-size: auto 58px;
+			border-radius: 48px;
+			max-width: 96px;
+		}
+	}
+}

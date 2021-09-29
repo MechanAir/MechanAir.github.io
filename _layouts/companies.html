@@ -41,4 +41,35 @@ layout: default
 			</div>
 		</div>
 	</div>	
+	<div class="slide" id="slide-three">
+		<div class="wrap">
+			<h3>{{ site.data.acquisitions.slide-three.title }}</h3>
+			<p class="sub">{{ site.data.acquisitions.slide-three.paragraph }}</p>
+			<ul class="features">
+			{% for benefit in site.data.acquisitions.benefits %}
+			<li>
+				<div class="icon" style="background-image: url(../images/{{ benefit.icon }})">
+				</div>
+				<div class="text">
+					<span class="heading">{{ benefit.title }}</span>
+					<span class="content">{{ benefit.description }}</span>
+				</div>
+			</li>
+			{% endfor %}
+			</ul>
+		</div>
+	</div>	
+	<div class="slide" id="slide-four">
+		<div class="wrap">
+			<h3>{{ site.data.acquisitions.slide-four.title }}</h3>
+			<ol class="timeline">
+			{% for step in site.data.acquisitions.process %}
+			<li>
+				<span class="heading">{{ step.title }}</span>
+				<span class="content">{{ step.description }}</span>
+			</li>
+			{% endfor %}
+			</ul>
+		</div>
+	</div>	
 <div>
