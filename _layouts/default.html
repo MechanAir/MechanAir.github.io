@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
+    <title>{% if page.title %}{{ page.title }}{% endif %}</title>
     {% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html }}">{% endif %}
     {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
     {% if page.author %}
@@ -14,13 +14,14 @@
 
     <link href="{{ site.url }}/atom.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Atom Feed">
     <link href="{{ site.url }}/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
-    <link rel="stylesheet" href="https://use.typekit.net/omh8iyu.css">
 
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="cleartype" content="on">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
     <link rel="stylesheet" href="{{ site.url }}/css/main.css">
     <!-- HTML5 Shiv and Media Query Support for IE -->
     <!--[if lt IE 9]>
@@ -28,16 +29,42 @@
       <script src="{{ site.url }}/js/vendor/respond.min.js"></script>
     <![endif]-->
 
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{site.url}}/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{site.url}}/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{site.url}}/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="{{site.url}}/images/safari-pinned-tab.svg" color="#109fda">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  <script src="{{ site.url }}/js/vendor/jquery-1.9.1.min.js"></script>
+  <script src="{{ site.url }}/js/plugins/jquery.easing.js"></script>
+    <script src="{{ site.url }}/js/plugins/jquery.slidorion.min.js"></script>
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120057878-1"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+     gtag('config', 'UA-120057878-1');
+    </script>
+    
   </head>
 
-  <body id="js-body" style="height: 100vh;background-color: #08273f; background-image: url(../images/mark.svg); background-repeat: no-repeat; background-size: 300px; background-position: center;">
-    <div id="page-wrapper">
-      {{ content }}
-    </div>
+  <body id="js-body">
+    {% include browser-upgrade.html %}
+    {% include header.html %}
 
-    <script src="{{ site.url }}/js/vendor/jquery-1.9.1.min.js"></script>
+      {{ content }}
+      
+      {% include footer.html %}
+
     <script src="{{ site.url }}/js/main.js"></script>
+    <script src="{{ site.url }}/js/nav.js"></script>
 
   </body>
+
 
 </html>

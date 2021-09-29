@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<div id="main" class="home" role="main">				
+	<div class="slide" id="intro">		
+		<div class="wrap">
+			<div class="slide-text">
+				<h2 class="h3">{{ site.data.home.title }}</h2>
+				<p>{{ site.data.home.intro }}</p>
+				<a class="btn btn-nospace" href="{{site.url}}{{site.data.home.cta-link}}">{{ site.data.home.cta}} &raquo;</a>
+			</div>
+			<div class="slide-image" style="background-image: url(../images/{{site.data.home.intro-image}}">
+			</div>		
+		</div>
+	</div>
+	<div class="slide" id="slide-one">
+		<div class="wrap">
+			<h3>{{ site.data.home.section-one.title }}</h3>
+			<p class="sub">{{ site.data.home.section-one.paragraph }}</p>
+		</div>
+	</div>		
+	<div class="slide" id="slide-two">	
+		<div class="wrap">
+			<h3>{{ site.data.home.section-two.title }}</h3>
+			<p class="sub">{{ site.data.home.section-two.paragraph }}</p>
+			{% for item in site.data.industries %}
+				{{ item.industry.icon }}
+				{{ item.industry }}
+			{% endfor %}
+		</div>
+	</div>
+	<div class="slide" id="slide-thre">
+		<div class="wrap">
+			<h3>{{ site.data.home.section-three.title }}</h3>
+			<div id="slide-blocks">
+				<div class="inner-slide-block" style="background-image: url({{ site.data.home.section-three.block-one.icon }})">
+					<h4>{{ site.data.home.section-three.block-one.title }}</h4>
+					<p>{{ site.data.home.section-three.block-one.paragraph }}</p>
+					<a class="btn btn-nospace" href="{{site.url}}{{ site.data.home.section-three.block-one.cta-link }}">{{ site.data.home.section-three.block-one.cta }} &raquo;</a>
+				</div>
+				<div class="inner-slide-block" style="background-image: url({{ site.data.home.section-three.block-two.icon }})">
+					<h4>{{ site.data.home.section-three.block-two.title }}</h4>
+					<p>{{ site.data.home.section-three.block-two.paragraph }}</p>
+					<a class="btn btn-nospace" href="{{site.url}}{{ site.data.home.section-three.block-two.cta-link }}">{{ site.data.home.section-three.block-two.cta }} &raquo;</a>
+				</div>
+			</div>
+		</div>
+</div><!-- /#main -->

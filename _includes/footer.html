@@ -1,15 +1,18 @@
+
 <footer role="contentinfo" id="site-footer">
-	<nav role="navigation" class="menu bottom-menu">
-		<ul class="menu-item">
-		{% for link in site.data.footer %}
-      {% if link.url contains 'http' %}
-        {% assign domain = '' %}
-        {% else %}
-        {% assign domain = site.url %}
-      {% endif %}
-			<li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
-		{% endfor %}
-		</ul>
-	</nav><!-- /.bottom-menu -->
-	<p class="copyright">&#169; {{ site.time | date: '%Y' }} <a href="{{ site.url }}">{{ site.title }}</a> powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> + <a href="http://mmistakes.github.io/skinny-bones-jekyll/" rel="nofollow">Skinny Bones</a>.</p>
+	<div class="wrap">
+		<div class="footer-one">
+			<h2 id="footer-logo">{{ site.title}}</h2>
+		</div>
+		<div class="footer-two">
+			<nav role="navigation" class="menu bottom-menu">
+				<a href="{{ site.url }}/contact">Get in Touch</a> <a href="{{ site.url }}/services">Services</a> <a href="{{ site.url }}/insights">Insights</a> <a href="{{ site.url }}/careers">Jobs</a>  <a href="{{ site.url }}/terms-and-conditions">Terms &amp; Conditions</a>
+			</nav>
+			
+		</div>
+		<div class="footer-three">
+			<p>535 Exchange Court Aurora, IL 60504</p>
+			<p class="small">&#169; {{ site.time | date: '%Y' }} MechanAir Holdings, LLC</p>
+		</div>
+	</div>
 </footer>
