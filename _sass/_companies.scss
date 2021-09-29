@@ -32,7 +32,7 @@
 	li {
 		
 		counter-increment: my-awesome-counter;
-		padding: $gutter;
+		
 		&:before {
 			content: counter(my-awesome-counter) ". ";
 			@extend h5;
@@ -48,6 +48,7 @@
 		width: 50%;
 		border-right: 2px solid $blue;
 			li {
+				padding: $gutter;
 				&:after {
 					content: " ";
 					display: block;
