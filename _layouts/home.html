@@ -21,7 +21,7 @@ layout: default
 			<div class="slide-blocks">
 				{% for service in site.services %}
 				<div class="inner-slide-block">
-					<span class="icon" style="background-image: url(../images/{{ service.icon }});"></span>
+					<div class="icon" style="background-image: url(../images/{{ service.icon }});"></div>
 					<div class="text">
 						<h4>{{ service.title }}</h4>
 						<p>{{ service.intro }}</p>
@@ -38,8 +38,8 @@ layout: default
 			<ul class="features">
 			{% for item in site.data.industries %}
 			<li>
-				<span class="icon" style="background-image: url(../images/{{ item.icon }})">
-				</span>
+				<div class="icon" style="background-image: url(../images/{{ item.icon }})">
+				</div>
 				{{ item.industry }}
 			</li>
 			{% endfor %}

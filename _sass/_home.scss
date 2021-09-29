@@ -76,7 +76,9 @@
 	.inner-slide-block {
 		background-color: $base-color;
 		margin-bottom: $gutter;
+		padding: $gutter;
 		@include media($medium) {
+			padding: 0;
 			border-top-left-radius: 999px;
 			border-bottom-left-radius: 999px;
 			@include span-columns(6);
@@ -87,12 +89,13 @@
 		}
 		.icon {
 			display: block;
-			padding-top: 64px;
+			height: 48px;
 			background-repeat: no-repeat;
-			background-position: $gutter $gutter;
+			background-position: left center;
 			background-size: 48px;
 			@include media($medium) {
 				background-color: $white;
+				margin: 0;
 				padding: 0;
 				height: 100%;
 				padding-left: $gutter*4;
@@ -104,7 +107,7 @@
 			}
 		}
 		.text {
-			padding: $gutter;
+			padding: $gutter 0;
 			@include media($medium) {
 				padding: $gutter*2 $gutter;
 			}
