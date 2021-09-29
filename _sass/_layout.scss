@@ -8,12 +8,9 @@
 	z-index: 10;
 	width: 100%;
 	position: sticky;
-	top: 0px;
-	padding: 0px  !important;
-	@include media($medium) {
-		padding-top: $gutter !important;
-		top: -$gutter;
-	}
+	top: -$gutter*2;
+	padding: 0px;
+	padding-top: $gutter*2;
 	#mast-position {
 		width: 100%;
 		padding-top: 0;
