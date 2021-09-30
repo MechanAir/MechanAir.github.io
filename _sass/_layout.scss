@@ -84,13 +84,16 @@ h1#logo {
 		background-color: $base-color-dark;
 		background-size: cover;
 		background-position: center center;
-		text-align: left;
+		text-align: center;
 		color: $white;
 		padding: $gutter 0;
 			.wrap {
 				padding-top: 0;
 				padding-bottom: 0;
 			}
+		@include media($medium) {
+			text-align: center;
+		}
 		.background-overlay {
 			background: linear-gradient(to bottom, rgba($base-color-dark,1) 0%, rgba($base-color-dark,.75) 100%);
 			padding-top: $gutter;
@@ -119,6 +122,8 @@ h1#logo {
 			@include span-columns(8);
 			display: block;
 			float: none;
+			margin-left: auto;
+			margin-right: auto !important;
 		}
 	}
 	@at-root {
