@@ -1,6 +1,6 @@
 ---
 layout: services
-title: "Capabilities"
-intro: Our comprehensive range of services helps our clients get the most out of their facilities while lowering operating costs, ultimately creating a comfortable, clean and healthy environment.
+title: "Capabilities and Projects"
+intro: We have partnered with a wide array of clients to deliver complex design/build and value-added engineering work for marquee end-customers
 permalink: "/services/"
 ---
