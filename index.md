@@ -1,5 +1,5 @@
 ---
 layout: home
 permalink: /
-title: "MechanAir"
+title: "MechanAir: HVAC, Mechanical, Design/Build"
 ---
