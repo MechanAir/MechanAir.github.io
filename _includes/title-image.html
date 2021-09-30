@@ -1,8 +1,8 @@
 <div class="page-title">
 	<div class="background-overlay">	
 		<div class="wrap">
-			<h5>{{ page.subtitle }}</h5>
-			<h2>{{ page.title }}</h2>
+			{% if page.subtitle %}<h5>{{ page.subtitle }}</h5>{% endif %}
+			<h2 class="h3">{{ page.title }}</h2>
 			{% if page.intro %}<p class="large">{{ page.intro }}</p>{% endif %}			
 		</div>
 	</div>
