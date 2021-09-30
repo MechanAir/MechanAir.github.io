@@ -15,7 +15,7 @@ layout: default
 				  {% assign featured_counter = featured_counter | plus: 1 %}
 					{% assign featured_posts = featured_posts | push: post.title %}
 				{% endif %}
-				{% if featured_counter == 4 %}
+				{% if featured_counter == 8 %}
 				 {% break %}
 				{% endif %}
 			{% endfor %}

@@ -2,7 +2,7 @@
 layout: project
 title:  "Chamberlain Group HQ"
 authors: [Adit Shukla]
-tags: [Featured-Project, Projects, Process-Piping, Institutional & Military]
+tags: [Featured-Project, Projects, HVAC-Installation, Design-and-Engineering, Institutional & Military]
 client: Pepper Construction
 heroimage: chamberlain.jpg
 images: [chamberlain.jpg]
