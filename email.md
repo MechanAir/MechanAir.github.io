@@ -20,20 +20,20 @@ noindex: true
                   <table cellspacing="0" cellpadding="0" border="0" style="line-height: 1.1;">
                      <tr style="border:0;padding:0;">
                         <td style="border:0;padding:0;">
-                           <div style="font: 1em arial, helvetica, sans-serif;color:#0a263f;">John D'Angelo</div>
+                           <div style="font: 1em arial, helvetica, sans-serif;color:#0a263f;">First Last</div>
                         </td>
                      </tr>
                      <tr style="border:0;padding:0;">
                         <td style="padding: 4px 0 12px;border:0;">
                            <div style="font: 0.75em arial, helvetica, sans-serif;color:#0a263f;">
-                           CEO  |  MechanAir   </div>
+                           Position  |  MechanAir   </div>
                         </td>
                      </tr>
                      <tr style="padding: 0;border:0;">
-                        <td style="color: #109FDA;border:0;padding:0;font: 0.75em arial, helvetica, sans-serif;text-decoration: none;">(630) 849-3819</td>
+                        <td style="color: #109FDA;border:0;padding:0;font: 0.75em arial, helvetica, sans-serif;text-decoration: none;">(111) 111-1111</td>
                      </tr>
                      <tr style="padding: 0;border:0;">
-                        <td style="color: #109FDA;border:0;padding:0;font: 0.75em arial, helvetica, sans-serif;text-decoration: none;">jdangelo@mechanair.com</td>
+                        <td style="color: #109FDA;border:0;padding:0;font: 0.75em arial, helvetica, sans-serif;text-decoration: none;">email@mechanair.com</td>
                      </tr>
                   </table>
                </td>
