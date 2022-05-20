@@ -2,7 +2,7 @@
 layout: company
 title:  "Trademark Mechanical"
 location: Chesapeake, VA
-heroimage: chesapeake2.jpg
+heroimage: chesapeake-2.jpg
 acquired: 2022
 
 ---
